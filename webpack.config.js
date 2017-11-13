@@ -23,7 +23,7 @@ module.exports = {
     devtool: 'cheap-module-eval-source-map',
     resolve:{
         alias:{
-            'xmClient':path.join(__dirname,'./src/threeParty/mxClient.js')
+            'xmClient':path.join(__dirname,'./src/threeParty/mxClient/mxClient.js')
         }
     },
     devServer: {
