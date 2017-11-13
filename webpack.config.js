@@ -21,7 +21,11 @@ module.exports = {
         publicPath: '/dist/'
     },
     devtool: 'cheap-module-eval-source-map',
-
+    resolve:{
+        alias:{
+            'xmClient':path.join(__dirname,'./src/threeParty/mxClient.js')
+        }
+    },
     devServer: {
         contentBase: [path.join(__dirname,'demo'), path.join(__dirname, 'dist')],
         overlay: true,
