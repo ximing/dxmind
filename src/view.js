@@ -4,7 +4,6 @@ export default class MindView extends Component{
     
     constructor(){
         super();
-
     }
 
     render(){
