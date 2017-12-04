@@ -61,14 +61,9 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         'presets': [
-                            ["env", {
-                                "targets": {
-                                    "browsers": ["last 1 Chrome versions"]
-                                    // "chrome": 59
-                                },
-                                 "modules": false,
-                                // "loose": true
-                            }], 'react'
+                            ['es2015', {
+                                'modules': false
+                            }], 'stage-0', 'react'
                         ],
                         
                         'env': {},
@@ -77,7 +72,8 @@ module.exports = {
                             'dist'
                         ],
                         'plugins': [
-                            'transform-class-properties'
+                            'transform-class-properties',
+                            'transform-decorators-legacy'
                         ]
                     }
                 }

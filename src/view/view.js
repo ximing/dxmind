@@ -9,7 +9,7 @@ export default class MindView extends Component{
     render(){
         return(
             <div id="dxContainer">
-dsa
+            
             </div> 
         )
     }
